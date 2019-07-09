@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/icon.ico" /><!--title icon-->
+        <title>Merch Shop</title>
+        <meta name="author" content="Alexandru Mihai">
+        <meta name="description" content="Aufgabe 11 Entwicklung Interaktive Anwendungen">
+		<link rel="stylesheet" href="style/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+
+		<!-- Aufgabe: Aufgabe 11   Name: Alexandru Mihai
+			Matrikel: 261195
+			Datum: 16.01.2019 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert. -->
+	</head>
+	<body>
+
+		<header>
+			<nav class="navHeader">
+				<div class="container" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+				<ul class="navigatie">
+				<li class="puncte">
+					<a href="#"><img src="img/merchlogo.png" class="photo" alt="logo"></a>
+					</li>
+				<li class="puncte">
+					<a href="#">NBA Merch</a></li>
+				<li class="puncte">
+					<a href="#">NFL Merch</a
+					>
+					</li>
+				<li class="puncte">
+					<a href="#">Infos</a>
+					</li>
+				<li class="puncte">
+
+					<a href="#">Mein Korb</a>
+					<span id="qty">0</span>
+					<span id="summe">0</span>
+					<button type="button" onclick="deleteButton()" class="btn btn-alert">Clear</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	
+
+		<main>
+			<h1>Please buy our merchandise !</h1>
+			<aside>
+				<a href="#"><img src="img/angobotebanner.png" id="banner" alt="banner"></a>
+			</aside>
+			<div id="filter">
+				<button type="button" onclick="filter1()" class="btn btn-info">0$ - 10$</button>
+				<button type="button" onclick="filter2()" class="btn btn-info">10$ -30$ </button>
+				<button type="button" onclick="filter3()" class="btn btn-info">30$+</button>
+				<button type="button" onclick="filtersize()" class="btn btn-info">Size</button>
+				<button type="button" onclick="lakers()" class="btn btn-warning">Lakers Section</button>
+				<button type="button" onclick="showall()" class="btn btn-info">Show all</button>
+			</div>
+			<h2>Caps and Shirts</h2>
+			<div class="products" id="productWrapper"></div>
+			
+				
+		</main>
+
+		<footer>
+	 		<div class="navFooter">
+
+				<div class="puncteF"><a href="#">Customer Service</a></div>
+				<div class="puncteF"><a href="#">Contact</a></div>
+				<div class="puncteF"><a href="#">Shipping</a></div>
+				<div class="puncteF"><a href="#">FaQ</a></div>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>	
+	</body>
+</html>
